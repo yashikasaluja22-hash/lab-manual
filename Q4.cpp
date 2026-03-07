@@ -14,8 +14,8 @@ cin >> quantity;
 cout << "Enter unit price of one item: ";
 cin >> price;
 
-double amount = 0;
-amount += (price * quantity) * ((double)20/100);
+double amount = price * quantity;
+amount -= (price * quantity) * ((double)20/100);
 cout << '$' << amount;
 return 0;
 }
